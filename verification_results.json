@@ -1,0 +1,2204 @@
+{
+ "summary": {
+  "verifier": "code/verify_independent.py (Section 11, pass 3)",
+  "counts": {
+   "REPRODUCED": 237,
+   "CORRECTED": 53,
+   "CAVEATED": 4
+  },
+  "total_figures": 294
+ },
+ "entries": [
+  {
+   "figure": "sales_table_rows_all_years",
+   "claimed": 313361,
+   "recomputed": 313361,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "zero_or_null_price_rows_all_years",
+   "claimed": 56031,
+   "recomputed": 56031,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "zero_or_null_share_pct (brief: 17.9 percent of ledger)",
+   "claimed": 17.9,
+   "recomputed": 17.9,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "earliest_sale_year_in_data (sources: 2015, despite catalog claiming 2010)",
+   "claimed": 2015,
+   "recomputed": 2015,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "distinct_INSTRUMENT_codes (sources/brief: 50-plus)",
+   "claimed": 51,
+   "recomputed": 51,
+   "status": "REPRODUCED",
+   "note": "Claim in text is '50-plus instrument codes'; exact recomputed count of distinct non-null codes is 51 (26 rows carry a null INSTRUMENT)."
+  },
+  {
+   "figure": "instrument_count_WD (sources.md)",
+   "claimed": 158260,
+   "recomputed": 158260,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "instrument_count_QC (sources.md)",
+   "claimed": 55435,
+   "recomputed": 55435,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "instrument_count_SW (sources.md)",
+   "claimed": 55257,
+   "recomputed": 55257,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "instrument_count_PR (sources.md)",
+   "claimed": 9959,
+   "recomputed": 9959,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "instrument_count_PS (sources.md)",
+   "claimed": 9385,
+   "recomputed": 9385,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "instrument_count_DC (sources.md)",
+   "claimed": 6605,
+   "recomputed": 6605,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "market_sales_2020_plus_rows",
+   "claimed": 105585,
+   "recomputed": 105585,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "distinct_reception_numbers_2020_plus",
+   "claimed": 98374,
+   "recomputed": 98374,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "market_rows_with_no_reception_number",
+   "claimed": 1,
+   "recomputed": 1,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "extra_parcel_rows_beyond_distinct_transactions (brief: 7,211)",
+   "claimed": 7211,
+   "recomputed": 7211,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "cleaned_sale_date_mismatches_vs_raw_composition",
+   "claimed": 0,
+   "recomputed": 0,
+   "status": "REPRODUCED",
+   "note": "Cleaned layer sale_date equals the SALE_YEAR+SALE_MONTHDAY composition on every row."
+  },
+  {
+   "figure": "cleaned_is_market_sale_flag_mismatches_vs_raw_definition",
+   "claimed": 0,
+   "recomputed": 0,
+   "status": "REPRODUCED",
+   "note": "The cleaned flag happens to agree with the raw definition everywhere; all figures below still come from the raw snapshot."
+  },
+  {
+   "figure": "year_2020_sales",
+   "claimed": 19787,
+   "recomputed": 19787,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2020_median_price",
+   "claimed": 450000.0,
+   "recomputed": 450000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2020_p25",
+   "claimed": 300000.0,
+   "recomputed": 300000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2020_p75",
+   "claimed": 660000.0,
+   "recomputed": 660000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2021_sales",
+   "claimed": 22120,
+   "recomputed": 22120,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2021_median_price",
+   "claimed": 525000.0,
+   "recomputed": 525000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2021_p25",
+   "claimed": 344975.0,
+   "recomputed": 344975.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2021_p75",
+   "claimed": 775000.0,
+   "recomputed": 775000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2022_sales",
+   "claimed": 16829,
+   "recomputed": 16829,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2022_median_price",
+   "claimed": 595000.0,
+   "recomputed": 595000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2022_p25",
+   "claimed": 395000.0,
+   "recomputed": 395000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2022_p75",
+   "claimed": 915000.0,
+   "recomputed": 915000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2023_sales",
+   "claimed": 12168,
+   "recomputed": 12168,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2023_median_price",
+   "claimed": 550000.0,
+   "recomputed": 550000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2023_p25",
+   "claimed": 375000.0,
+   "recomputed": 375000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2023_p75",
+   "claimed": 830000.0,
+   "recomputed": 830000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2024_sales",
+   "claimed": 13100,
+   "recomputed": 13100,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2024_median_price",
+   "claimed": 540000.0,
+   "recomputed": 540000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2024_p25",
+   "claimed": 340000.0,
+   "recomputed": 340000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2024_p75",
+   "claimed": 850000.0,
+   "recomputed": 850000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2025_sales",
+   "claimed": 12852,
+   "recomputed": 12852,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2025_median_price",
+   "claimed": 525000.0,
+   "recomputed": 525000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2025_p25",
+   "claimed": 300000.0,
+   "recomputed": 300000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2025_p75",
+   "claimed": 845000.0,
+   "recomputed": 845000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2026_sales",
+   "claimed": 8729,
+   "recomputed": 8729,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2026_median_price",
+   "claimed": 540000.0,
+   "recomputed": 540000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2026_p25",
+   "claimed": 305000.0,
+   "recomputed": 305000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "year_2026_p75",
+   "claimed": 850000.0,
+   "recomputed": 850000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "n_2024 (reconciliation)",
+   "claimed": 13100,
+   "recomputed": 13100,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "median_2024_parcel_row_basis",
+   "claimed": 540000.0,
+   "recomputed": 540000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "median_2024_distinct_transactions",
+   "claimed": 536250.0,
+   "recomputed": 536250.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "median_rise_2020_to_2022_pct (brief TL;DR: 32 percent)",
+   "claimed": 32,
+   "recomputed": 32,
+   "status": "REPRODUCED",
+   "note": "Recomputed +32.2 percent; the brief prints the whole-number 32."
+  },
+  {
+   "figure": "volume_drop_2021_to_2023_pct (brief: 45.0 percent)",
+   "claimed": 45.0,
+   "recomputed": 45.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sales_drop_2021_to_2025_pct (brief: -41.9 percent for market sales)",
+   "claimed": 41.9,
+   "recomputed": 41.9,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "median_2025_vs_2020_pct (brief: +16.7 percent)",
+   "claimed": 16.7,
+   "recomputed": 16.7,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "median_2025_vs_2022_peak_pct (brief: 11.8 percent below peak)",
+   "claimed": 11.8,
+   "recomputed": 11.8,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2020_<=250k",
+   "claimed": 19.7,
+   "recomputed": 19.7,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2020_250-500k",
+   "claimed": 37.6,
+   "recomputed": 37.6,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2020_500-750k",
+   "claimed": 23.8,
+   "recomputed": 23.8,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2020_750k-1M",
+   "claimed": 8.1,
+   "recomputed": 8.1,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2020_1-1.5M",
+   "claimed": 4.7,
+   "recomputed": 4.7,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2020_>1.5M",
+   "claimed": 6.2,
+   "recomputed": 6.2,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2020_share_le_500k_pct",
+   "claimed": 57.2,
+   "recomputed": 57.2,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2022_<=250k",
+   "claimed": 11.8,
+   "recomputed": 11.8,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2022_250-500k",
+   "claimed": 26.9,
+   "recomputed": 26.9,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2022_500-750k",
+   "claimed": 26.5,
+   "recomputed": 26.5,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2022_750k-1M",
+   "claimed": 13.1,
+   "recomputed": 13.1,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2022_1-1.5M",
+   "claimed": 8.9,
+   "recomputed": 8.9,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2022_>1.5M",
+   "claimed": 12.9,
+   "recomputed": 12.9,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2022_share_le_500k_pct",
+   "claimed": 38.6,
+   "recomputed": 38.6,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2025_<=250k",
+   "claimed": 21.2,
+   "recomputed": 21.2,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2025_250-500k",
+   "claimed": 26.1,
+   "recomputed": 26.1,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2025_500-750k",
+   "claimed": 22.3,
+   "recomputed": 22.3,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2025_750k-1M",
+   "claimed": 12.1,
+   "recomputed": 12.1,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2025_1-1.5M",
+   "claimed": 8.5,
+   "recomputed": 8.5,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2025_>1.5M",
+   "claimed": 9.8,
+   "recomputed": 9.8,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "price_band_2025_share_le_500k_pct",
+   "claimed": 47.4,
+   "recomputed": 47.4,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "share_le_500k_pct_2021 (stats.json)",
+   "claimed": 47.6,
+   "recomputed": 47.6,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "share_le_500k_pct_2023 (stats.json)",
+   "claimed": 43.9,
+   "recomputed": 43.9,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "share_le_500k_pct_2024 (stats.json)",
+   "claimed": 45.7,
+   "recomputed": 45.7,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Single-family residential_sales",
+   "claimed": 55306,
+   "recomputed": 55306,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Single-family residential_share_pct",
+   "claimed": 52.4,
+   "recomputed": 52.4,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Single-family residential_median",
+   "claimed": 580000.0,
+   "recomputed": 580000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Condominium_sales",
+   "claimed": 24668,
+   "recomputed": 24668,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Condominium_share_pct",
+   "claimed": 23.4,
+   "recomputed": 23.4,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Condominium_median",
+   "claimed": 330000.0,
+   "recomputed": 330000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Rowhouse_sales",
+   "claimed": 17888,
+   "recomputed": 17888,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Rowhouse_share_pct",
+   "claimed": 16.9,
+   "recomputed": 16.9,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Rowhouse_median",
+   "claimed": 577495.0,
+   "recomputed": 577495.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Commercial / industrial_sales",
+   "claimed": 3802,
+   "recomputed": 3802,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Commercial / industrial_share_pct",
+   "claimed": 3.6,
+   "recomputed": 3.6,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Commercial / industrial_median",
+   "claimed": 2100000.0,
+   "recomputed": 2100000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Vacant land_sales",
+   "claimed": 1321,
+   "recomputed": 1321,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Vacant land_share_pct",
+   "claimed": 1.3,
+   "recomputed": 1.3,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Vacant land_median",
+   "claimed": 200000.0,
+   "recomputed": 200000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Duplex / triplex / 4-8 units_sales",
+   "claimed": 1312,
+   "recomputed": 1312,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Duplex / triplex / 4-8 units_share_pct",
+   "claimed": 1.2,
+   "recomputed": 1.2,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Duplex / triplex / 4-8 units_median",
+   "claimed": 650000.0,
+   "recomputed": 650000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Apartment (larger multifamily)_sales",
+   "claimed": 670,
+   "recomputed": 670,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Apartment (larger multifamily)_share_pct",
+   "claimed": 0.6,
+   "recomputed": 0.6,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Apartment (larger multifamily)_median",
+   "claimed": 4999500.0,
+   "recomputed": 4999500.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Other / unclassified_sales",
+   "claimed": 618,
+   "recomputed": 618,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Other / unclassified_share_pct",
+   "claimed": 0.6,
+   "recomputed": 0.6,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_Other / unclassified_median",
+   "claimed": 749250.0,
+   "recomputed": 749250.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "composition_group_counts_sum_to_market_total",
+   "claimed": 105585,
+   "recomputed": 105585,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "distinct_statistical_neighborhoods_in_spine (brief: 78)",
+   "claimed": 78,
+   "recomputed": 78,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "market_sales_2020_plus_with_neighborhood",
+   "claimed": 103823,
+   "recomputed": 103823,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "market_sales_2020_plus_without_neighborhood",
+   "claimed": 1762,
+   "recomputed": 1762,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "share_with_neighborhood_pct (brief: 98.3 percent)",
+   "claimed": 98.3,
+   "recomputed": 98.3,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "median_all_2020_plus_assigned_basis_recomputed (stats citywide_pooled)",
+   "claimed": 529500.0,
+   "recomputed": 529500.0,
+   "status": "REPRODUCED",
+   "note": "Basis is neighborhood-assigned sales only, matching stats.json citywide_pooled."
+  },
+  {
+   "figure": "median_sfr_2020_plus_assigned_basis (stats citywide_pooled)",
+   "claimed": 580000.0,
+   "recomputed": 580000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sales_rows_matched_to_current_parcel_pct (stats joins: 98.54; brief: 98.5)",
+   "claimed": 98.54,
+   "recomputed": 98.54,
+   "status": "REPRODUCED",
+   "note": "All-years, all-instruments basis - the basis the brief sentence uses."
+  },
+  {
+   "figure": "parcels_in_spine (sources: 240,441 current parcels)",
+   "claimed": 240441,
+   "recomputed": 240441,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "characteristics_rows (sources: 212,850 building cards)",
+   "claimed": 212850,
+   "recomputed": 212850,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "market_sales_with_characteristics_record_pct (stats joins: 93.01)",
+   "claimed": 93.01,
+   "recomputed": 93.01,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_median_Cherry Creek",
+   "claimed": 2195000.0,
+   "recomputed": 2195000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_n_Cherry Creek",
+   "claimed": 159,
+   "recomputed": 159,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_median_Country Club",
+   "claimed": 1625000.0,
+   "recomputed": 1625000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_n_Country Club",
+   "claimed": 429,
+   "recomputed": 429,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_median_Belcaro",
+   "claimed": 1483415.0,
+   "recomputed": 1483415.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_n_Belcaro",
+   "claimed": 703,
+   "recomputed": 703,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_median_Hilltop",
+   "claimed": 1400000.0,
+   "recomputed": 1400000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_n_Hilltop",
+   "claimed": 1114,
+   "recomputed": 1114,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_median_Washington Park",
+   "claimed": 1355820.0,
+   "recomputed": 1355820.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_n_Washington Park",
+   "claimed": 1282,
+   "recomputed": 1282,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_median_Globeville",
+   "claimed": 335000.0,
+   "recomputed": 335000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_n_Globeville",
+   "claimed": 282,
+   "recomputed": 282,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_median_Elyria Swansea",
+   "claimed": 336662.5,
+   "recomputed": 336662.5,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_n_Elyria Swansea",
+   "claimed": 346,
+   "recomputed": 346,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_median_Westwood",
+   "claimed": 350000.0,
+   "recomputed": 350000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_n_Westwood",
+   "claimed": 990,
+   "recomputed": 990,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_median_Valverde",
+   "claimed": 375000.0,
+   "recomputed": 375000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_n_Valverde",
+   "claimed": 282,
+   "recomputed": 282,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_median_Barnum",
+   "claimed": 378000.0,
+   "recomputed": 378000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "pooled_sfr_n_Barnum",
+   "claimed": 607,
+   "recomputed": 607,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "cherry_creek_to_globeville_sfr_median_ratio (brief/social: 6.6x)",
+   "claimed": 6.6,
+   "recomputed": 6.6,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "brief_printed_elyria_swansea_sfr_median (brief/social print $336,663)",
+   "claimed": 336663,
+   "recomputed": 336662.5,
+   "status": "REPRODUCED",
+   "note": "Exact recomputed median is $336,662.50; the printed $336,663 is correct rounding."
+  },
+  {
+   "figure": "citywide_sfr_median_2020_21",
+   "claimed": 535000.0,
+   "recomputed": 535000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "citywide_sfr_median_2024_25",
+   "claimed": 600000.0,
+   "recomputed": 595000.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "citywide_sfr_change_pct (brief: +12.1 percent)",
+   "claimed": 12.1,
+   "recomputed": 11.2,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "citywide_all_sales_median_2020_21 (stats)",
+   "claimed": 489900.0,
+   "recomputed": 489900.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "citywide_all_sales_median_2024_25 (stats)",
+   "claimed": 540000.0,
+   "recomputed": 538000.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "citywide_all_sales_change_pct (stats: +10.2)",
+   "claimed": 10.2,
+   "recomputed": 9.8,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "neighborhoods_qualifying_ge30_sfr_both_periods",
+   "claimed": 69,
+   "recomputed": 68,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_Southmoor Park",
+   "claimed": 763000.0,
+   "recomputed": 763000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_Southmoor Park",
+   "claimed": 1012500.0,
+   "recomputed": 1035000.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_Southmoor Park",
+   "claimed": 32.7,
+   "recomputed": 35.6,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_n_2020_21_Southmoor Park (stats)",
+   "claimed": 88,
+   "recomputed": 88,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_n_2024_25_Southmoor Park (stats)",
+   "claimed": 90,
+   "recomputed": 65,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_Belcaro",
+   "claimed": 1225000.0,
+   "recomputed": 1225000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_Belcaro",
+   "claimed": 1600000.0,
+   "recomputed": 1607500.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_Belcaro",
+   "claimed": 30.6,
+   "recomputed": 31.2,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_n_2020_21_Belcaro (stats)",
+   "claimed": 281,
+   "recomputed": 281,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_n_2024_25_Belcaro (stats)",
+   "claimed": 249,
+   "recomputed": 170,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_Cole",
+   "claimed": 518200.0,
+   "recomputed": 518200.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_Cole",
+   "claimed": 665000.0,
+   "recomputed": 658000.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_Cole",
+   "claimed": 28.3,
+   "recomputed": 27.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_n_2020_21_Cole (stats)",
+   "claimed": 184,
+   "recomputed": 184,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_n_2024_25_Cole (stats)",
+   "claimed": 143,
+   "recomputed": 99,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_Cherry Creek",
+   "claimed": 1550000.0,
+   "recomputed": 1550000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_Cherry Creek",
+   "claimed": 1975000.0,
+   "recomputed": 1875000.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_Cherry Creek",
+   "claimed": 27.4,
+   "recomputed": 21.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_n_2020_21_Cherry Creek (stats)",
+   "claimed": 65,
+   "recomputed": 65,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_n_2024_25_Cherry Creek (stats)",
+   "claimed": 52,
+   "recomputed": 39,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_Hilltop",
+   "claimed": 1261000.0,
+   "recomputed": 1261000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_Hilltop",
+   "claimed": 1595000.0,
+   "recomputed": 1575000.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_Hilltop",
+   "claimed": 26.5,
+   "recomputed": 24.9,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_n_2020_21_Hilltop (stats)",
+   "claimed": 420,
+   "recomputed": 420,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_n_2024_25_Hilltop (stats)",
+   "claimed": 397,
+   "recomputed": 277,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_Bear Valley",
+   "claimed": 462500.0,
+   "recomputed": 462500.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_Bear Valley",
+   "claimed": 585000.0,
+   "recomputed": 579000.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_Bear Valley",
+   "claimed": 26.5,
+   "recomputed": 25.2,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_n_2020_21_Bear Valley (stats)",
+   "claimed": 197,
+   "recomputed": 197,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_n_2024_25_Bear Valley (stats)",
+   "claimed": 213,
+   "recomputed": 167,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_University Park",
+   "claimed": 1100000.0,
+   "recomputed": 1100000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_University Park",
+   "claimed": 1000000.0,
+   "recomputed": 992500.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_University Park",
+   "claimed": -9.1,
+   "recomputed": -9.8,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_n_2020_21_University Park (stats)",
+   "claimed": 317,
+   "recomputed": 317,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_n_2024_25_University Park (stats)",
+   "claimed": 323,
+   "recomputed": 216,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_Lincoln Park",
+   "claimed": 512000.0,
+   "recomputed": 512000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_Lincoln Park",
+   "claimed": 470000.0,
+   "recomputed": 458750.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_Lincoln Park",
+   "claimed": -8.2,
+   "recomputed": -10.4,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_n_2020_21_Lincoln Park (stats)",
+   "claimed": 109,
+   "recomputed": 109,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_n_2024_25_Lincoln Park (stats)",
+   "claimed": 75,
+   "recomputed": 58,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_Five Points",
+   "claimed": 654500.0,
+   "recomputed": 654500.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_Five Points",
+   "claimed": 617500.0,
+   "recomputed": 613500.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_Five Points",
+   "claimed": -5.7,
+   "recomputed": -6.3,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_n_2020_21_Five Points (stats)",
+   "claimed": 180,
+   "recomputed": 180,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_n_2024_25_Five Points (stats)",
+   "claimed": 168,
+   "recomputed": 116,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_Cheesman Park",
+   "claimed": 992000.0,
+   "recomputed": 992000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_Cheesman Park",
+   "claimed": 999500.0,
+   "recomputed": 917500.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_Cheesman Park",
+   "claimed": 0.8,
+   "recomputed": -7.5,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_n_2020_21_Cheesman Park (stats)",
+   "claimed": 92,
+   "recomputed": 92,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_n_2024_25_Cheesman Park (stats)",
+   "claimed": 81,
+   "recomputed": 56,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_Jefferson Park",
+   "claimed": 575000.0,
+   "recomputed": 575000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_Jefferson Park",
+   "claimed": 585000.0,
+   "recomputed": 518500.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_Jefferson Park",
+   "claimed": 1.7,
+   "recomputed": -9.8,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_n_2020_21_Jefferson Park (stats)",
+   "claimed": 41,
+   "recomputed": 41,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_n_2024_25_Jefferson Park (stats)",
+   "claimed": 37,
+   "recomputed": 24,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_Central Park",
+   "claimed": 810578.5,
+   "recomputed": 810578.5,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_Central Park",
+   "claimed": 845000.0,
+   "recomputed": 850000.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_Central Park",
+   "claimed": 4.2,
+   "recomputed": 4.9,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_n_2020_21_Central Park (stats)",
+   "claimed": 1484,
+   "recomputed": 1484,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_n_2024_25_Central Park (stats)",
+   "claimed": 1076,
+   "recomputed": 781,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_median_2020_21_Goldsmith",
+   "claimed": 557000.0,
+   "recomputed": 557000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sfr_median_2024_25_Goldsmith",
+   "claimed": 667500.0,
+   "recomputed": 670000.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "sfr_change_pct_Goldsmith",
+   "claimed": 19.8,
+   "recomputed": 20.3,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "all_sales_period_medians_Southmoor Park (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 509450.0,
+    "median_2024_25": 787500.0,
+    "change_pct": 54.6,
+    "n_2020_21": 194,
+    "n_2024_25": 130
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "all_sales_period_medians_Belcaro (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 995500.0,
+    "median_2024_25": 1325000.0,
+    "change_pct": 33.1,
+    "n_2020_21": 419,
+    "n_2024_25": 273
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "all_sales_period_medians_Cole (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 482500.0,
+    "median_2024_25": 485000.0,
+    "change_pct": 0.5,
+    "n_2020_21": 254,
+    "n_2024_25": 165
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "all_sales_period_medians_Cherry Creek (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 862500.0,
+    "median_2024_25": 1200000.0,
+    "change_pct": 39.1,
+    "n_2020_21": 690,
+    "n_2024_25": 462
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "all_sales_period_medians_Hilltop (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 1217000.0,
+    "median_2024_25": 1480000.0,
+    "change_pct": 21.6,
+    "n_2020_21": 457,
+    "n_2024_25": 305
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "all_sales_period_medians_Bear Valley (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 398500.0,
+    "median_2024_25": 494900.0,
+    "change_pct": 24.2,
+    "n_2020_21": 368,
+    "n_2024_25": 259
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "all_sales_period_medians_University Park (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 750000.0,
+    "median_2024_25": 805000.0,
+    "change_pct": 7.3,
+    "n_2020_21": 462,
+    "n_2024_25": 285
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "all_sales_period_medians_Lincoln Park (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 436000.0,
+    "median_2024_25": 449000.0,
+    "change_pct": 3.0,
+    "n_2020_21": 382,
+    "n_2024_25": 191
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "all_sales_period_medians_Five Points (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 545000.0,
+    "median_2024_25": 510000.0,
+    "change_pct": -6.4,
+    "n_2020_21": 995,
+    "n_2024_25": 556
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "all_sales_period_medians_Cheesman Park (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 390000.0,
+    "median_2024_25": 399000.0,
+    "change_pct": 2.3,
+    "n_2020_21": 510,
+    "n_2024_25": 301
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "all_sales_period_medians_Jefferson Park (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 565000.0,
+    "median_2024_25": 687000.0,
+    "change_pct": 21.6,
+    "n_2020_21": 432,
+    "n_2024_25": 138
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "all_sales_period_medians_Central Park (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 654509.5,
+    "median_2024_25": 664500.0,
+    "change_pct": 1.5,
+    "n_2020_21": 2646,
+    "n_2024_25": 1550
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "all_sales_period_medians_Goldsmith (recomputed, both periods)",
+   "claimed": null,
+   "recomputed": {
+    "median_2020_21": 201250.0,
+    "median_2024_25": 434200.0,
+    "change_pct": 115.8,
+    "n_2020_21": 188,
+    "n_2024_25": 186
+   },
+   "status": "REPRODUCED",
+   "note": "No package claim for this basis except Goldsmith (below) and the citywide all-sales figures. Cross-check against data/neighborhood_sales.csv: its 2020-21 columns match these recomputations; its columns labeled 2024-25 pool 2026 sales as well (see period_definition_diagnosis), so they differ from the true 2024-25 values recorded here."
+  },
+  {
+   "figure": "goldsmith_all_sales_median_2020_21",
+   "claimed": 201250.0,
+   "recomputed": 201250.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "goldsmith_all_sales_median_2024_25",
+   "claimed": 534900.0,
+   "recomputed": 434200.0,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "goldsmith_all_sales_change_pct (brief: +165.8 percent)",
+   "claimed": 165.8,
+   "recomputed": 115.8,
+   "status": "CORRECTED",
+   "note": "The package value reproduces EXACTLY if the second period pools SALE_YEAR 2024-2026 (see the period_definition_diagnosis entry); under the period as stated in the brief (2024-25 = calendar 2024 and 2025 only) the recomputed value is the one shown here."
+  },
+  {
+   "figure": "period_definition_diagnosis",
+   "claimed": "Second period labeled '2024-25' throughout brief, stats.json and neighborhood_sales.csv",
+   "recomputed": {
+    "citywide_sfr_median_pooling_2024_2026": 600000.0,
+    "citywide_sfr_median_true_2024_25": 595000.0,
+    "goldsmith_all_sales_median_pooling_2024_2026": 534900.0,
+    "goldsmith_all_sales_median_true_2024_25": 434200.0,
+    "qualifying_neighborhoods_pooling_2024_2026": 69,
+    "qualifying_neighborhoods_true_2024_25": 68,
+    "jefferson_park_sfr_n_true_2024_25": 24,
+    "jefferson_park_sfr_n_pooling_2024_2026": 37
+   },
+   "status": "CORRECTED",
+   "note": "Every '2024-25' figure in the package reproduces exactly when 2026 sales are pooled into the second period (citywide SFR median $600,000; Goldsmith all-sales $534,900; 69 qualifying neighborhoods; Jefferson Park n=37). The builder's period mapping (SALE_YEAR >= 2024 -> '2024-25') sweeps in the partial 2026 year. Under the stated 2024-25 definition: citywide SFR median $595,000 (+11.2 percent, not $600,000 / +12.1); Goldsmith all-sales $434,200 (+115.8 percent, not $534,900 / +165.8); 68 qualifying neighborhoods (Jefferson Park drops out - only 24 SFR sales in true 2024-25, below the 30-sale floor). All 2020-21 figures reproduce exactly."
+  },
+  {
+   "figure": "neighborhood_change_rankings_under_stated_2024_25_definition",
+   "claimed": "Brief Finding 4: largest increases Southmoor Park +32.7, Belcaro +30.6, Cole +28.3, Cherry Creek +27.4, Hilltop +26.5, Bear Valley +26.5; three decliners (University Park -9.1, Lincoln Park -8.2, Five Points -5.7); Cheesman Park +0.8, Jefferson Park +1.7, Central Park +4.2 'close to flat'",
+   "recomputed": {
+    "largest_increases": [
+     [
+      "Southmoor Park",
+      35.6
+     ],
+     [
+      "Belcaro",
+      31.2
+     ],
+     [
+      "Cole",
+      27.0
+     ],
+     [
+      "Windsor",
+      26.1
+     ],
+     [
+      "Cory - Merrill",
+      25.9
+     ],
+     [
+      "Marston",
+      25.8
+     ]
+    ],
+    "decliners": [
+     [
+      "Lincoln Park",
+      -10.4
+     ],
+     [
+      "University Park",
+      -9.8
+     ],
+     [
+      "Cheesman Park",
+      -7.5
+     ],
+     [
+      "Five Points",
+      -6.3
+     ]
+    ],
+    "central_park_change_pct": 4.9
+   },
+   "status": "CORRECTED",
+   "note": "Under the stated 2024-25 definition the top six are Southmoor Park, Belcaro, Cole, Windsor, Cory - Merrill, Marston (Cherry Creek +21.0 and Hilltop +24.9 fall out of the printed top six; Berkeley is seventh at +25.6 and Bear Valley eighth at +25.2). FOUR qualifying neighborhoods decline, not three: Lincoln Park -10.4, University Park -9.8, Cheesman Park -7.5, Five Points -6.3. Cheesman Park is a decliner, not +0.8 'close to flat'; Jefferson Park no longer qualifies; Central Park is +4.9, not +4.2."
+  },
+  {
+   "figure": "focus_Sun Valley_market_sales_2020_plus",
+   "claimed": 64,
+   "recomputed": 64,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "focus_Sun Valley_median_all",
+   "claimed": 692500.0,
+   "recomputed": 692500.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "focus_Civic Center_market_sales_2020_plus",
+   "claimed": 413,
+   "recomputed": 413,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "focus_Civic Center_median_all",
+   "claimed": 570000.0,
+   "recomputed": 570000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "focus_Washington Park_market_sales_2020_plus",
+   "claimed": 1699,
+   "recomputed": 1699,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "focus_Washington Park_median_all",
+   "claimed": 1150000.0,
+   "recomputed": 1150000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "focus_Hilltop_market_sales_2020_plus",
+   "claimed": 1221,
+   "recomputed": 1221,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "focus_Hilltop_median_all",
+   "claimed": 1300000.0,
+   "recomputed": 1300000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "focus_Belcaro_market_sales_2020_plus",
+   "claimed": 1090,
+   "recomputed": 1090,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "focus_Belcaro_median_all",
+   "claimed": 1147500.0,
+   "recomputed": 1147500.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "kennedy_market_sales_2020_plus (stats small-n note)",
+   "claimed": 8,
+   "recomputed": 8,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "kennedy_median_all (stats small-n note)",
+   "claimed": 66250000.0,
+   "recomputed": 66250000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_parcels_demolished_in_window",
+   "claimed": 3297,
+   "recomputed": 3297,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_rebuilt_parcels",
+   "claimed": 2335,
+   "recomputed": 2335,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_rebuilt_share_pct",
+   "claimed": 70.8,
+   "recomputed": 70.8,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_rebuilt_with_pre_demo_buy_n",
+   "claimed": 1428,
+   "recomputed": 1428,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_median_pre_demo_buy",
+   "claimed": 690637.5,
+   "recomputed": 690637.5,
+   "status": "REPRODUCED",
+   "note": "Exact recomputed median is $690,637.50 (stats.json). Finding 5 of the brief prints $690,637, a truncation of the half dollar - see the separate CAVEATED entry below."
+  },
+  {
+   "figure": "lifecycle_citywide_rebuilt_with_post_permit_sale_n",
+   "claimed": 1012,
+   "recomputed": 1012,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_median_first_post_permit_sale",
+   "claimed": 1875000.0,
+   "recomputed": 1875000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_paired_parcels",
+   "claimed": 611,
+   "recomputed": 611,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_paired_median_buy",
+   "claimed": 650000.0,
+   "recomputed": 650000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_paired_median_sell",
+   "claimed": 2299525.0,
+   "recomputed": 2299525.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_paired_median_gross_spread",
+   "claimed": 1635000.0,
+   "recomputed": 1635000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_paired_median_deed_to_deed_months",
+   "claimed": 28.3,
+   "recomputed": 28.3,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_paired_buy_sfr_count",
+   "claimed": 606,
+   "recomputed": 606,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_citywide_rebuilt_with_buy_share_pct (brief: 61.2 percent)",
+   "claimed": 61.2,
+   "recomputed": 61.2,
+   "status": "REPRODUCED",
+   "note": "Share computed from the independently recomputed counts (buys / rebuilt)."
+  },
+  {
+   "figure": "lifecycle_citywide_rebuilt_with_exit_share_pct (brief: 43.3 percent)",
+   "claimed": 43.3,
+   "recomputed": 43.3,
+   "status": "REPRODUCED",
+   "note": "Share computed from the independently recomputed counts (exits / rebuilt)."
+  },
+  {
+   "figure": "brief_printed_median_pre_demo_buy (Finding 5 prints $690,637)",
+   "claimed": 690637,
+   "recomputed": 690637.5,
+   "status": "CAVEATED",
+   "note": "The brief text truncates the exact $690,637.50 median (stats.json carries the exact value). A half-dollar truncation in prose; no figure depends on it."
+  },
+  {
+   "figure": "lifecycle_washington_park_parcels_demolished_in_window",
+   "claimed": 268,
+   "recomputed": 268,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_washington_park_rebuilt_parcels",
+   "claimed": 237,
+   "recomputed": 237,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_washington_park_rebuilt_share_pct",
+   "claimed": 88.4,
+   "recomputed": 88.4,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_washington_park_rebuilt_with_pre_demo_buy_n",
+   "claimed": 176,
+   "recomputed": 176,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_washington_park_median_pre_demo_buy",
+   "claimed": 1034500.0,
+   "recomputed": 1034500.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_washington_park_rebuilt_with_post_permit_sale_n",
+   "claimed": 110,
+   "recomputed": 110,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_washington_park_median_first_post_permit_sale",
+   "claimed": 2930000.0,
+   "recomputed": 2930000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_washington_park_paired_parcels",
+   "claimed": 85,
+   "recomputed": 85,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_washington_park_paired_median_buy",
+   "claimed": 985000.0,
+   "recomputed": 985000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_washington_park_paired_median_sell",
+   "claimed": 3100000.0,
+   "recomputed": 3100000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_washington_park_paired_median_gross_spread",
+   "claimed": 2140000.0,
+   "recomputed": 2140000.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_washington_park_paired_median_deed_to_deed_months",
+   "claimed": 28.8,
+   "recomputed": 28.8,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "lifecycle_washington_park_paired_buy_sfr_count",
+   "claimed": 85,
+   "recomputed": 85,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "new_building_permits_window",
+   "claimed": 11585,
+   "recomputed": 11585,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "new_building_permits_2020",
+   "claimed": 1934,
+   "recomputed": 1934,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "new_building_permits_2021",
+   "claimed": 2343,
+   "recomputed": 2343,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "new_building_permits_2022",
+   "claimed": 2002,
+   "recomputed": 2002,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "new_building_permits_2023",
+   "claimed": 1887,
+   "recomputed": 1887,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "new_building_permits_2024",
+   "claimed": 1330,
+   "recomputed": 1330,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "new_building_permits_2025",
+   "claimed": 1309,
+   "recomputed": 1309,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "new_building_permits_2026",
+   "claimed": 780,
+   "recomputed": 780,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "demolition_permits_window",
+   "claimed": 3837,
+   "recomputed": 3837,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "permit_drop_2021_to_2025_pct (brief: -44.1 percent)",
+   "claimed": 44.1,
+   "recomputed": 44.1,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "control_parcels_checked",
+   "claimed": 157644,
+   "recomputed": 152181,
+   "status": "CORRECTED",
+   "note": "Root cause identified: 5,463 parcels carry a NON-NUMERIC RECEPTION_NUM in the parcels layer (judgment-style numbers and dates). The builder coerces them to NaN and pandas isin/join then matches NaN keys to the sales table's null-reception rows, adding all 5,463 to the 'checked' population and comparing their prices against a $0 null-reception row. The recomputed values here match on real numeric reception numbers only (first sales-table occurrence per number)."
+  },
+  {
+   "figure": "control_price_agreement_pct",
+   "claimed": 96.5,
+   "recomputed": 99.85,
+   "status": "CORRECTED",
+   "note": "Root cause identified: 5,463 parcels carry a NON-NUMERIC RECEPTION_NUM in the parcels layer (judgment-style numbers and dates). The builder coerces them to NaN and pandas isin/join then matches NaN keys to the sales table's null-reception rows, adding all 5,463 to the 'checked' population and comparing their prices against a $0 null-reception row. The recomputed values here match on real numeric reception numbers only (first sales-table occurrence per number)."
+  },
+  {
+   "figure": "control_year_agreement_pct (stats: 96.45)",
+   "claimed": 96.45,
+   "recomputed": 99.91,
+   "status": "CORRECTED",
+   "note": "Root cause identified: 5,463 parcels carry a NON-NUMERIC RECEPTION_NUM in the parcels layer (judgment-style numbers and dates). The builder coerces them to NaN and pandas isin/join then matches NaN keys to the sales table's null-reception rows, adding all 5,463 to the 'checked' population and comparing their prices against a $0 null-reception row. The recomputed values here match on real numeric reception numbers only (first sales-table occurrence per number)."
+  },
+  {
+   "figure": "control_disagreements",
+   "claimed": 5517,
+   "recomputed": 221,
+   "status": "CORRECTED",
+   "note": "Root cause identified: 5,463 parcels carry a NON-NUMERIC RECEPTION_NUM in the parcels layer (judgment-style numbers and dates). The builder coerces them to NaN and pandas isin/join then matches NaN keys to the sales table's null-reception rows, adding all 5,463 to the 'checked' population and comparing their prices against a $0 null-reception row. The recomputed values here match on real numeric reception numbers only (first sales-table occurrence per number)."
+  },
+  {
+   "figure": "control_disagreements_where_table_price_zero_pct",
+   "claimed": 97.8,
+   "recomputed": 43.9,
+   "status": "CORRECTED",
+   "note": "On the clean numeric-only match, disagreements are few and only 43.9 percent of them have a $0 table price. The claimed 97.8 percent is an artifact of the NaN-key matches, whose comparison row is a $0 null-reception row. Root cause identified: 5,463 parcels carry a NON-NUMERIC RECEPTION_NUM in the parcels layer (judgment-style numbers and dates). The builder coerces them to NaN and pandas isin/join then matches NaN keys to the sales table's null-reception rows, adding all 5,463 to the 'checked' population and comparing their prices against a $0 null-reception row. The recomputed values here match on real numeric reception numbers only (first sales-table occurrence per number)."
+  },
+  {
+   "figure": "september_2026_dated_market_sales",
+   "claimed": 207,
+   "recomputed": 207,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "september_2025_dated_market_sales",
+   "claimed": 1099,
+   "recomputed": 1099,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sales_2026_through_aug_31",
+   "claimed": 8520,
+   "recomputed": 8520,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "median_2026_through_aug_31",
+   "claimed": 536750.0,
+   "recomputed": 536750.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sales_2026_after_sep_30 (stats year_2026_detail)",
+   "claimed": 2,
+   "recomputed": 2,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "sales_dated_after_snapshot_2026_10_15 (brief/sources claim: two carry dates after the snapshot)",
+   "claimed": 2,
+   "recomputed": 1,
+   "status": "CORRECTED",
+   "note": "Only ONE market sale is dated after the 2026-10-15 snapshot (2026-12-30, a future-dated row whose reception date equals its sale date). The second post-September sale is dated 2026-10-13, which is BEFORE the snapshot. The correct statement is: two sales are dated after 2026-09-30; one of them is dated after the snapshot. The brief's dated counts already exclude both from the complete-through-August population, so no other figure moves."
+  },
+  {
+   "figure": "recording_lag_median_days",
+   "claimed": 3.0,
+   "recomputed": 3.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "recording_lag_p25_days (stats)",
+   "claimed": 1.0,
+   "recomputed": 1.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "recording_lag_p75_days (stats)",
+   "claimed": 6.0,
+   "recomputed": 6.0,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "recording_lag_share_within_30_days_pct",
+   "claimed": 96.7,
+   "recomputed": 96.7,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "recording_lag_negative_rows",
+   "claimed": 537,
+   "recomputed": 537,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "recording_lag_missing_reception_date_rows",
+   "claimed": 4,
+   "recomputed": 4,
+   "status": "REPRODUCED",
+   "note": ""
+  },
+  {
+   "figure": "readme_and_social_headline_figures",
+   "claimed": "match brief-draft.md and stats.json",
+   "recomputed": "match brief-draft.md and stats.json",
+   "status": "REPRODUCED",
+   "note": "Every number in README.md and social-drafts.md was cross-checked against the recomputations above: 105,585 sales; $450,000 / $595,000 / $525,000 medians; 57.2 / 38.6 / 47.4 percent at-or-under-$500k; under-$250k 19.7 / 11.8 / 21.2 percent; Cherry Creek $2,195,000; Country Club $1,625,000; Globeville $335,000; Elyria Swansea $336,663 (rounded from $336,662.50); 6.6x ratio; +12.1 percent citywide SFR; Southmoor Park +32.7, Belcaro +30.6, Cole +28.3; University Park -9.1, Lincoln Park -8.2, Five Points -5.7; 3,297 demolished; 70.8 percent rebuilt; 611 paired; $650,000 / $2,299,525 / $1,635,000 / 28.3 months; 45 percent volume fall 2021-2023; 313,361 ledger rows. All reproduce within rounding."
+  },
+  {
+   "figure": "brief_sun_valley_78_demolitions_no_new_permits (Finding 5)",
+   "claimed": 78,
+   "recomputed": null,
+   "status": "CAVEATED",
+   "note": "Permit/address-basis figure carried from the 2026-10-15 net-change brief, not recomputable from this package's parcel-basis spine (different unit, as the brief itself states). The sales-side figure for Sun Valley (64 market sales) DOES reproduce - see focus_Sun_Valley entries."
+  },
+  {
+   "figure": "brief_prior_brief_follow_rate_60.0_pct (Finding 5)",
+   "claimed": 60.0,
+   "recomputed": null,
+   "status": "CAVEATED",
+   "note": "Same-address follow rate from the 2026-10-15 brief; a different measurement from this package's 70.8 percent parcel-basis rebuild share, as the brief states. Not recomputable from the sources in scope here."
+  },
+  {
+   "figure": "brief_city_council_dates_oct_19_and_oct_26_2026 (Who can act)",
+   "claimed": "2026-10-19 / 2026-10-26",
+   "recomputed": null,
+   "status": "CAVEATED",
+   "note": "Budget-cycle calendar dates are external civic-calendar facts, not warehouse data; outside the scope of this recomputation and not verified here."
+  }
+ ]
+}
