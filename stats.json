@@ -1,0 +1,608 @@
+{
+ "meta": {
+  "brief": "Denver real property sales (assessor keystone)",
+  "snapshot_date": "2026-10-15",
+  "sources": "City and County of Denver open data via the Machine Readable Denver warehouse (snapshots of 2026-10-15; sales service last edited 2026-10-15T13:24:24Z, parcels 2026-10-15T11:13:12Z, characteristics 2026-10-15T09:48:04Z)",
+  "population": "Market sales: INSTRUMENT in (WD, SW) and SALE_PRICE > 0, SALE_YEAR 2020-2026. Unit of observation is the parcel row; distinct recorded transactions are counted by RECEPTION_NUM where the deal is the unit.",
+  "price_basis": "Nominal dollars, as recorded. Not inflation-adjusted."
+ },
+ "reconciliation": {
+  "sales_table_rows_all_years": 313361,
+  "zero_or_null_price_rows_all_years": 56031,
+  "market_sales_2020_plus_rows": 105585,
+  "future_dated_rows_excluded_from_dated_figures": 1,
+  "analysis_population_rows": 105584,
+  "distinct_reception_numbers_2020_plus": 98374,
+  "market_rows_with_no_reception_number": 1,
+  "median_2024": 540000.0,
+  "n_2024": 13100,
+  "median_2024_distinct_transactions": 536250.0
+ },
+ "yearly": [
+  {
+   "year": 2020,
+   "sales": 19787,
+   "median_price": 450000.0,
+   "p25": 300000.0,
+   "p75": 660000.0,
+   "partial": false
+  },
+  {
+   "year": 2021,
+   "sales": 22120,
+   "median_price": 525000.0,
+   "p25": 344975.0,
+   "p75": 775000.0,
+   "partial": false
+  },
+  {
+   "year": 2022,
+   "sales": 16829,
+   "median_price": 595000.0,
+   "p25": 395000.0,
+   "p75": 915000.0,
+   "partial": false
+  },
+  {
+   "year": 2023,
+   "sales": 12168,
+   "median_price": 550000.0,
+   "p25": 375000.0,
+   "p75": 830000.0,
+   "partial": false
+  },
+  {
+   "year": 2024,
+   "sales": 13100,
+   "median_price": 540000.0,
+   "p25": 340000.0,
+   "p75": 850000.0,
+   "partial": false
+  },
+  {
+   "year": 2025,
+   "sales": 12852,
+   "median_price": 525000.0,
+   "p25": 300000.0,
+   "p75": 845000.0,
+   "partial": false
+  },
+  {
+   "year": 2026,
+   "sales": 8728,
+   "median_price": 540000.0,
+   "p25": 305000.0,
+   "p75": 850000.0,
+   "partial": true
+  }
+ ],
+ "year_2026_detail": {
+  "rows_all": 8728,
+  "rows_through_aug_31": 8520,
+  "median_through_aug_31": 536750.0,
+  "rows_sep_2026": 207,
+  "rows_october_2026_partial": 1,
+  "future_dated_rows_excluded": 1,
+  "sep_2025_rows": 1099
+ },
+ "recording_lag": {
+  "median_days": 3.0,
+  "p25_days": 1.0,
+  "p75_days": 6.0,
+  "share_within_30_days_pct": 96.7,
+  "negative_lag_rows": 537,
+  "missing_reception_date_rows": 4
+ },
+ "price_bands_pct": {
+  "2020": {
+   "<=250k": 19.7,
+   "250-500k": 37.6,
+   "500-750k": 23.8,
+   "750k-1M": 8.1,
+   "1-1.5M": 4.7,
+   ">1.5M": 6.2,
+   "share_le_500k_pct": 57.2
+  },
+  "2021": {
+   "<=250k": 16.2,
+   "250-500k": 31.4,
+   "500-750k": 25.7,
+   "750k-1M": 11.1,
+   "1-1.5M": 7.4,
+   ">1.5M": 8.2,
+   "share_le_500k_pct": 47.6
+  },
+  "2022": {
+   "<=250k": 11.8,
+   "250-500k": 26.9,
+   "500-750k": 26.5,
+   "750k-1M": 13.1,
+   "1-1.5M": 8.9,
+   ">1.5M": 12.9,
+   "share_le_500k_pct": 38.6
+  },
+  "2023": {
+   "<=250k": 12.0,
+   "250-500k": 31.9,
+   "500-750k": 25.8,
+   "750k-1M": 12.5,
+   "1-1.5M": 8.3,
+   ">1.5M": 9.4,
+   "share_le_500k_pct": 43.9
+  },
+  "2024": {
+   "<=250k": 17.0,
+   "250-500k": 28.7,
+   "500-750k": 23.3,
+   "750k-1M": 12.0,
+   "1-1.5M": 8.7,
+   ">1.5M": 10.4,
+   "share_le_500k_pct": 45.7
+  },
+  "2025": {
+   "<=250k": 21.2,
+   "250-500k": 26.1,
+   "500-750k": 22.3,
+   "750k-1M": 12.1,
+   "1-1.5M": 8.5,
+   ">1.5M": 9.8,
+   "share_le_500k_pct": 47.4
+  }
+ },
+ "composition": {
+  "Single-family residential": {
+   "sales": 55306,
+   "share_pct": 52.4,
+   "median_price": 580000.0
+  },
+  "Condominium": {
+   "sales": 24764,
+   "share_pct": 23.5,
+   "median_price": 330000.0
+  },
+  "Rowhouse": {
+   "sales": 17888,
+   "share_pct": 16.9,
+   "median_price": 577495.0
+  },
+  "Commercial / industrial": {
+   "sales": 3802,
+   "share_pct": 3.6,
+   "median_price": 2100000.0
+  },
+  "Vacant land": {
+   "sales": 1321,
+   "share_pct": 1.3,
+   "median_price": 200000.0
+  },
+  "Duplex / triplex / 4-8 units": {
+   "sales": 1312,
+   "share_pct": 1.2,
+   "median_price": 650000.0
+  },
+  "Apartment (larger multifamily)": {
+   "sales": 670,
+   "share_pct": 0.6,
+   "median_price": 4999500.0
+  },
+  "Other / unclassified": {
+   "sales": 521,
+   "share_pct": 0.5,
+   "median_price": 1010000.0
+  }
+ },
+ "neighborhood_under_500k_share": {
+  "basis": "all market sales assigned a neighborhood; share at or under $500,000",
+  "neighborhoods_qualifying": 75,
+  "largest_decreases": [
+   {
+    "neighborhood": "Bear Valley",
+    "share_2020_21_pct": 81.2,
+    "share_2024_25_pct": 52.1,
+    "change_pts": -29.1,
+    "n_2020_21": 368,
+    "n_2024_25": 259
+   },
+   {
+    "neighborhood": "Capitol Hill",
+    "share_2020_21_pct": 80.7,
+    "share_2024_25_pct": 53.2,
+    "change_pts": -27.5,
+    "n_2020_21": 1042,
+    "n_2024_25": 647
+   },
+   {
+    "neighborhood": "Harvey Park South",
+    "share_2020_21_pct": 66.3,
+    "share_2024_25_pct": 41.8,
+    "change_pts": -24.5,
+    "n_2020_21": 341,
+    "n_2024_25": 268
+   },
+   {
+    "neighborhood": "Harvey Park",
+    "share_2020_21_pct": 77.1,
+    "share_2024_25_pct": 55.8,
+    "change_pts": -21.3,
+    "n_2020_21": 550,
+    "n_2024_25": 339
+   },
+   {
+    "neighborhood": "Fort Logan",
+    "share_2020_21_pct": 63.3,
+    "share_2024_25_pct": 43.6,
+    "change_pts": -19.7,
+    "n_2020_21": 417,
+    "n_2024_25": 273
+   }
+  ]
+ },
+ "citywide_pooled": {
+  "population": "all market sales in the analysis population (not only neighborhood-assigned)",
+  "median_all_2020_plus": 525000.0,
+  "median_sfr_2020_plus": 580000.0,
+  "sales_with_neighborhood": 103823,
+  "sales_without_neighborhood": 1761
+ },
+ "neighborhood_change_sfr": {
+  "neighborhoods_qualifying": 68,
+  "citywide_basis": "all single-family market sales, assigned or not",
+  "citywide_sfr_median_2020_21": 535000.0,
+  "citywide_sfr_median_2024_25": 595000.0,
+  "largest_increases": [
+   {
+    "neighborhood": "Southmoor Park",
+    "median_2020_21": 763000.0,
+    "median_2024_25": 1035000.0,
+    "change_pct": 35.6,
+    "n_2020_21": 88,
+    "n_2024_25": 65
+   },
+   {
+    "neighborhood": "Belcaro",
+    "median_2020_21": 1225000.0,
+    "median_2024_25": 1607500.0,
+    "change_pct": 31.2,
+    "n_2020_21": 281,
+    "n_2024_25": 170
+   },
+   {
+    "neighborhood": "Cole",
+    "median_2020_21": 518200.0,
+    "median_2024_25": 658000.0,
+    "change_pct": 27.0,
+    "n_2020_21": 184,
+    "n_2024_25": 99
+   },
+   {
+    "neighborhood": "Windsor",
+    "median_2020_21": 575000.0,
+    "median_2024_25": 725000.0,
+    "change_pct": 26.1,
+    "n_2020_21": 61,
+    "n_2024_25": 36
+   },
+   {
+    "neighborhood": "Cory - Merrill",
+    "median_2020_21": 737500.0,
+    "median_2024_25": 928750.0,
+    "change_pct": 25.9,
+    "n_2020_21": 354,
+    "n_2024_25": 252
+   },
+   {
+    "neighborhood": "Marston",
+    "median_2020_21": 485000.0,
+    "median_2024_25": 610000.0,
+    "change_pct": 25.8,
+    "n_2020_21": 270,
+    "n_2024_25": 198
+   }
+  ],
+  "smallest_changes": [
+   {
+    "neighborhood": "Lincoln Park",
+    "median_2020_21": 512000.0,
+    "median_2024_25": 458750.0,
+    "change_pct": -10.4,
+    "n_2020_21": 109,
+    "n_2024_25": 58
+   },
+   {
+    "neighborhood": "University Park",
+    "median_2020_21": 1100000.0,
+    "median_2024_25": 992500.0,
+    "change_pct": -9.8,
+    "n_2020_21": 317,
+    "n_2024_25": 216
+   },
+   {
+    "neighborhood": "Cheesman Park",
+    "median_2020_21": 992000.0,
+    "median_2024_25": 917500.0,
+    "change_pct": -7.5,
+    "n_2020_21": 92,
+    "n_2024_25": 56
+   },
+   {
+    "neighborhood": "Five Points",
+    "median_2020_21": 654500.0,
+    "median_2024_25": 613500.0,
+    "change_pct": -6.3,
+    "n_2020_21": 180,
+    "n_2024_25": 116
+   },
+   {
+    "neighborhood": "Country Club",
+    "median_2020_21": 1595000.0,
+    "median_2024_25": 1620000.0,
+    "change_pct": 1.6,
+    "n_2020_21": 167,
+    "n_2024_25": 102
+   },
+   {
+    "neighborhood": "Montclair",
+    "median_2020_21": 643000.0,
+    "median_2024_25": 670000.0,
+    "change_pct": 4.2,
+    "n_2020_21": 369,
+    "n_2024_25": 225
+   }
+  ]
+ },
+ "neighborhood_sfr_extremes": {
+  "highest": [
+   {
+    "neighborhood": "Cherry Creek",
+    "median_sfr": 2195000.0,
+    "sales_sfr": 159
+   },
+   {
+    "neighborhood": "Country Club",
+    "median_sfr": 1625000.0,
+    "sales_sfr": 429
+   },
+   {
+    "neighborhood": "Belcaro",
+    "median_sfr": 1483415.0,
+    "sales_sfr": 703
+   },
+   {
+    "neighborhood": "Hilltop",
+    "median_sfr": 1400000.0,
+    "sales_sfr": 1114
+   },
+   {
+    "neighborhood": "Washington Park",
+    "median_sfr": 1355820.0,
+    "sales_sfr": 1282
+   }
+  ],
+  "lowest": [
+   {
+    "neighborhood": "Globeville",
+    "median_sfr": 335000.0,
+    "sales_sfr": 282
+   },
+   {
+    "neighborhood": "Elyria Swansea",
+    "median_sfr": 336662.5,
+    "sales_sfr": 346
+   },
+   {
+    "neighborhood": "Westwood",
+    "median_sfr": 350000.0,
+    "sales_sfr": 990
+   },
+   {
+    "neighborhood": "Valverde",
+    "median_sfr": 375000.0,
+    "sales_sfr": 282
+   },
+   {
+    "neighborhood": "Barnum",
+    "median_sfr": 378000.0,
+    "sales_sfr": 607
+   }
+  ]
+ },
+ "citywide_period_medians": {
+  "population": "all market sales in the analysis population (not only neighborhood-assigned)",
+  "all_sales": {
+   "median_2020_21": 485000.0,
+   "median_2024_25": 532882.5,
+   "change_pct": 9.9
+  },
+  "sfr": {
+   "median_2020_21": 535000.0,
+   "median_2024_25": 595000.0,
+   "change_pct": 11.2
+  }
+ },
+ "goldsmith_composition_case": {
+  "all_sales_median_2020_21": 201250.0,
+  "all_sales_median_2024_25": 434200.0,
+  "all_sales_change_pct": 115.8,
+  "sfr_median_2020_21": 557000.0,
+  "sfr_median_2024_25": 670000.0,
+  "sfr_change_pct": 20.3,
+  "note": "All-sales median swings +115.8% on a change in what sold (low-priced condos dominated 2020-21 sales); the single-family median for the same periods moves +20.3%. The brief's neighborhood movement finding is therefore computed on the single-family basis."
+ },
+ "kennedy_small_n": {
+  "market_sales_2020_plus": 8,
+  "median_all": 66250000.0,
+  "note": "Eight recorded market sales in 2020+ (airport-area land parcels); excluded from neighborhood rankings under the small-numbers rule."
+ },
+ "lifecycle_citywide": {
+  "parcels_demolished_in_window": 3297,
+  "rebuilt_parcels": 2335,
+  "rebuilt_share_pct": 70.8,
+  "not_rebuilt_parcels": 962,
+  "rebuilt_share_censoring": {
+   "demolitions_final_12_months": 460,
+   "rebuilt_share_final_12_months_pct": 46.1,
+   "demolitions_earlier": 2837,
+   "rebuilt_share_earlier_pct": 74.8
+  },
+  "boundary_sales_section_12_2": {
+   "on_demolition_date": 0,
+   "on_permit_date": 1,
+   "between_demolition_and_permit": 77
+  },
+  "rebuilt_with_pre_demo_market_buy": 1428,
+  "median_pre_demo_buy": 690637.5,
+  "rebuilt_with_post_permit_sale": 1012,
+  "median_first_post_permit_sale": 1875000.0,
+  "paired_parcels": 611,
+  "paired_median_buy": 650000.0,
+  "paired_median_sell": 2299525.0,
+  "paired_median_gross_spread": 1635000.0,
+  "paired_median_deed_to_deed_months": 28.3,
+  "paired_buy_composition": {
+   "Single-family residential": 606,
+   "Other / unclassified": 3,
+   "Rowhouse": 2
+  },
+  "paired_multi_parcel_deeds": 7,
+  "paired_single_parcel_transactions": {
+   "parcels": 604,
+   "median_buy": 650000.0,
+   "median_sell": 2300000.0,
+   "median_gross_spread": 1637601.0,
+   "median_deed_to_deed_months": 28.1
+  },
+  "buy_recency": {
+   "median_months_buy_to_demolition": 7.6,
+   "share_bought_within_36_months_pct": 91.2
+  },
+  "paired_buy_within_36_months": {
+   "parcels": 557,
+   "median_buy": 675000.0,
+   "median_sell": 2325000.0,
+   "median_gross_spread": 1649000.0,
+   "median_deed_to_deed_months": 26.9
+  }
+ },
+ "lifecycle_washington_park_control": {
+  "parcels_demolished_in_window": 268,
+  "rebuilt_parcels": 237,
+  "rebuilt_share_pct": 88.4,
+  "not_rebuilt_parcels": 31,
+  "rebuilt_share_censoring": {
+   "demolitions_final_12_months": 40,
+   "rebuilt_share_final_12_months_pct": 60.0,
+   "demolitions_earlier": 228,
+   "rebuilt_share_earlier_pct": 93.4
+  },
+  "boundary_sales_section_12_2": {
+   "on_demolition_date": 0,
+   "on_permit_date": 0,
+   "between_demolition_and_permit": 9
+  },
+  "rebuilt_with_pre_demo_market_buy": 176,
+  "median_pre_demo_buy": 1034500.0,
+  "rebuilt_with_post_permit_sale": 110,
+  "median_first_post_permit_sale": 2930000.0,
+  "paired_parcels": 85,
+  "paired_median_buy": 985000.0,
+  "paired_median_sell": 3100000.0,
+  "paired_median_gross_spread": 2140000.0,
+  "paired_median_deed_to_deed_months": 28.8,
+  "paired_buy_composition": {
+   "Single-family residential": 85
+  },
+  "paired_multi_parcel_deeds": 0,
+  "paired_single_parcel_transactions": {
+   "parcels": 85,
+   "median_buy": 985000.0,
+   "median_sell": 3100000.0,
+   "median_gross_spread": 2140000.0,
+   "median_deed_to_deed_months": 28.8
+  },
+  "buy_recency": {
+   "median_months_buy_to_demolition": 7.9,
+   "share_bought_within_36_months_pct": 97.6
+  },
+  "paired_buy_within_36_months": {
+   "parcels": 83,
+   "median_buy": 1000000.0,
+   "median_sell": 3100000.0,
+   "median_gross_spread": 2130000.0,
+   "median_deed_to_deed_months": 28.5
+  }
+ },
+ "lifecycle_censoring_note": "Buys are observable only from 2015 (the sales table's first year) and only when the purchase was itself a market sale; exits are observable only if the rebuilt parcel sold again before the 2026-10-15 snapshot. Both shares are floors. The rebuilt share is also right-censored: demolitions in the final 12 months of the window have had under a year to draw a permit (see rebuilt_share_censoring). One market-sale row with a sale date after the snapshot (2026-12-30) is excluded from every dated figure (reconciliation).",
+ "permit_crosscheck": {
+  "new_building_permits_window": 11585,
+  "new_building_by_year": {
+   "2020": 1934,
+   "2021": 2343,
+   "2022": 2002,
+   "2023": 1887,
+   "2024": 1330,
+   "2025": 1309,
+   "2026": 780
+  },
+  "demolition_permits_window": 3837
+ },
+ "focus_neighborhoods": {
+  "Sun Valley": {
+   "market_sales_2020_plus": 64,
+   "median_all": 692500.0
+  },
+  "Civic Center": {
+   "market_sales_2020_plus": 413,
+   "median_all": 570000.0
+  },
+  "Globeville": {
+   "market_sales_2020_plus": 516,
+   "median_all": 350000.0
+  },
+  "Capitol Hill": {
+   "market_sales_2020_plus": 2527,
+   "median_all": 350000.0
+  },
+  "Hampden South": {
+   "market_sales_2020_plus": 2977,
+   "median_all": 515000.0
+  },
+  "Washington Park": {
+   "market_sales_2020_plus": 1699,
+   "median_all": 1150000.0
+  },
+  "Hilltop": {
+   "market_sales_2020_plus": 1221,
+   "median_all": 1300000.0
+  },
+  "Belcaro": {
+   "market_sales_2020_plus": 1090,
+   "median_all": 1147500.0
+  },
+  "Central Park": {
+   "market_sales_2020_plus": 6513,
+   "median_all": 680000.0
+  },
+  "Gateway - Green Valley Ranch": {
+   "market_sales_2020_plus": 5410,
+   "median_all": 440000.0
+  },
+  "DIA": {
+   "market_sales_2020_plus": 1590,
+   "median_all": 448415.0
+  }
+ },
+ "control_parcels_last_sale": {
+  "parcels_checked": 152181,
+  "price_agreement_pct": 99.85,
+  "year_agreement_pct": 99.91,
+  "disagreements": 221,
+  "disagreements_where_table_price_is_zero_pct": 43.9
+ },
+ "joins": {
+  "sales_rows_matched_to_current_parcel_pct": 98.54,
+  "sales_rows_keyed": 313360,
+  "sales_rows_total": 313361,
+  "market_sales_2020_plus_with_neighborhood": 103823,
+  "market_sales_2020_plus_with_characteristics_record_pct": 93.01
+ }
+}
